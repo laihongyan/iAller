@@ -1,0 +1,33 @@
+## Input file information
+Sequence_File=..\iAller\data\all.fasta.txt
+Sequence_Type=Protein
+
+## Descriptor method
+Method=CKSAAP;AAC;DPC
+## parameters for protein and peptide descriptors
+# Kmer, RCKmer & PseKNC
+Kmer_Size=3
+
+# CKSAAP, CKSAAGP
+K_Space=3
+
+## output format
+Output_Format=svm
+
+
+## Feature selection (pearsonr)
+Feature_Selection_Algorithm=pearsonr
+Selected_Feature_Number=200
+
+## Dimension reduction (pca)
+Dimension_Reduction_Algorithm=pca
+Dimension_Reduction_Number=100
+
+## Model construction (RF)
+ML=RF
+
+# RF
+Tree_Number=200
+
+## K-fold Cross-Validation
+Validation=5
